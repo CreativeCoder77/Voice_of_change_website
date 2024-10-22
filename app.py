@@ -23,6 +23,10 @@ def women():
 def children():
     return render_template("children.html")
 
+@app.route("/equality")
+def equality():
+    return render_template("equality.html")
+
 @app.route("/about")
 def about():
     return render_template("about.html")

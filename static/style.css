@@ -105,8 +105,6 @@ nav ul li a {
     font-weight: normal;
 }
 
-
-
 .btn-discover {
     display: inline-block;
     padding: 15px 30px;
@@ -184,7 +182,7 @@ nav ul li a {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.504);
+    background: rgba(0, 0, 0, 0.415);
     transition: background 0.3s;
 }
 
@@ -203,7 +201,7 @@ nav ul li a {
 
 .card:nth-child(1) .card-front, .card:nth-child(1) .card-back { background-image: url("images/women.png"); }
 .card:nth-child(2) .card-front, .card:nth-child(2) .card-back { background-image: url("images/children.png"); }
-.card:nth-child(3) .card-front, .card:nth-child(3) .card-back { background-image: url("images/back_img_5.jpg"); }
+.card:nth-child(3) .card-front, .card:nth-child(3) .card-back { background-image: url("images/equality.png"); }
 .card:nth-child(4) .card-front, .card:nth-child(4) .card-back { background-image: url("images/card_img.jpg"); }
 .card:nth-child(5) .card-front, .card:nth-child(5) .card-back { background-image: url("images/back_img_4.jpg"); }
 

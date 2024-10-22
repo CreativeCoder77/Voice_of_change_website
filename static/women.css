@@ -428,13 +428,13 @@ img{
     border-radius: 500px;
 }
 .img1{
-    margin-left: 200px;
-    margin-bottom: 50px;
+    margin-left: 100px;
+    margin-bottom: 200px;
 
 }
 .img2{
     position: relative;
-    right: 500px;
+    right: 400px;
     margin-bottom: 50px;
 
 }
