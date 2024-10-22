@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/progress.css">
+    <title>Progress Tracking</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Pacifico&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Recursive:wght@300..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Indie+Flower&family=New+Amsterdam&family=Pacifico&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Recursive:wght@300..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="hero">
+        <div class="overlay"></div>
+        <nav>
+            <h1>Next Vishwa Guru</h1>
+            <ul>
+                <li><a href="index.html" class="Home">Home</a></li>
+                <li><a href="about.html" class="about">About Us</a></li>
+                <li><a href="contact_us.html" class="contact">Join Now</a></li>
+            </ul>
+        </nav>
+        <div class="hero-content">
+            <h2>Home >> Progress Tracking</h2>
+            <p>A comprehensive system of tracking and evaluation</p>
+            <a href="#scrolltohere" class="btn-discover">Read More</a>
+            <p class="arrow">&darr;</p>
+        </div>
+    </header>
+
+    <div id="scrolltohere"></div>
+
+
+    <section class="vision">
+        <div class="main-vision-topic">
+            <h2>Monitoring progress toward India's Vision 2047</h2>
+        </div>
+
+        <div class="vision-topic">
+            <h3> Annual Reports
+            </h3>
+            <ul>
+                <li>
+                    <p>Annual reports will serve as a critical tool for assessing the progress of various initiatives
+                        under Vision 2047. These reports will be detailed and data-driven, providing an in-depth
+                        analysis of the developments in each sector. They will highlight the successes achieved over the
+                        year, showcasing milestones and the impact of specific policies and projects. Equally important,
+                        the reports will identify areas where progress has been slower, offering insights into
+                        challenges faced and recommending corrective actions. By documenting both achievements and
+                        shortcomings, these reports will ensure transparency and accountability, helping to refine
+                        strategies and adjust policies as needed to stay aligned with the long-term vision.
+                    </p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="vision-topic">
+            <h3> Performance Indicators
+            </h3>
+            <ul>
+                <li>
+                    <p>Key performance indicators (KPIs) will be established to quantitatively measure the progress
+                        toward the 2047 goals. These indicators will cover a broad range of metrics that reflect the
+                        health of the economy, social equity, technological advancement, environmental sustainability,
+                        and governance. For instance, GDP growth will be closely monitored to gauge economic prosperity,
+                        while employment rates will indicate the effectiveness of job creation initiatives. Literacy
+                        rates will serve as a measure of the progress in education and skill development, and carbon
+                        emissions will be tracked to assess the impact of environmental policies. These indicators will
+                        be regularly updated and analyzed to provide a clear picture of whether the country is on track
+                        to meet its targets. By focusing on specific, measurable outcomes, performance indicators will
+                        allow for precise adjustments to strategies and interventions, ensuring that the overall
+                        trajectory toward Vision 2047 remains positive.</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="vision-topic">
+            <h3>Public Dashboards
+            </h3>
+            <ul>
+                <li>
+                    <p>To foster transparency and public engagement, online public dashboards will be created, offering
+                        real-time updates on the progress of key projects and initiatives. These dashboards will be
+                        accessible to everyone, providing a clear, user-friendly interface where citizens can track the
+                        development of infrastructure projects, environmental initiatives, healthcare improvements, and
+                        more. The dashboards will display data visually, using charts, graphs, and maps to make complex
+                        information easy to understand. Additionally, they will include features that allow users to
+                        drill down into specific areas of interest, such as regional progress, sector-specific updates,
+                        or timelines of major projects. By making this information publicly available, the dashboards
+                        will not only enhance accountability but also encourage citizen participation and feedback. This
+                        open approach will help build trust and foster a collective sense of ownership over the nation’s
+                        progress toward its 2047 goals.</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="vision-topic">
+            <h3>Conclusion</h3>
+            <ul>
+                <li>
+                    <p>
+                        Together, these measures—Annual Reports, Performance Indicators, and Public Dashboards—will
+                        create a robust system for tracking the progress of Vision 2047, ensuring that India remains on
+                        the path to achieving its vision of a prosperous, inclusive, and sustainable future.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-contact">
+                <p>Get involved today</p>
+                <h1 class="footer-heading-contact">Join hands in building a stronger India</h1>
+                <a href="contact_us.html" class="footer-btn">Join Now</a>
+            </div>
+
+    </footer>
+
+    <div id="scrollToTop" onclick="scrollToTop()"></div>
+
+    <script>
+
+        function handleScroll() {
+            const heroContent = document.querySelector('.card-container');
+            if (isInViewport(heroContent)) {
+                heroContent.classList.add('visible');
+            }
+        }
+
+        window.addEventListener('scroll', handleScroll);
+
+        window.onload = handleScroll;
+
+        window.onscroll = function () {
+            var scrollToTop = document.getElementById("scrollToTop");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                scrollToTop.classList.add("show");
+            } else {
+                scrollToTop.classList.remove("show");
+            }
+        };
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+
+    </script>
+
+</body>
+
+</html>

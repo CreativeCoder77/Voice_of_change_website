@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Now</title>
+    <link rel="stylesheet" href="static/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="hero">
+        <div class="overlay"></div>
+        <nav>
+            <h1> {{ website_name }}</h1>
+            <ul>
+                <li><a href="/" class="Home">Home</a></li>
+                <li><a href="/about" class="about">About Us</a></li>
+                <li><a href="/contact" class="contact">Join Now</a></li>
+            </ul>
+        </nav>
+        <div class="hero-content">
+            <p class="heading">Contact</p>
+            <h2>Get in Touch With Us</h2>
+            <p class="arrow">&darr;</p>
+        </div>
+    </header>
+
+
+
+    <div class="contact-section">
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <p>Reach out to us for any queries or collaboration</p>
+            <address>
+                A: SPS Pitampura<br>
+                P: 202-555-0188<br>
+                E: contact@NextVishwaGuru.com
+            </address>
+            <h3>Follow Us:</h3>
+            <div class="social-icons">
+                <a href="about:blank"><i class="fab fa-facebook"></i></a>
+                <a href="about:blank"><i class="fab fa-instagram"></i></a>
+                <a href="about:blank"><i class="fab fa-twitter"></i></a>
+                <a href="about:blank"><i class="fab fa-linkedin"></i></a>
+                <a href="about:blank"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <h3>SAY HI!</h3>
+            <h2>Send us a Message</h2>
+            <form netlify>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+
+                <button type="submit">SEND</button>
+            </form>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

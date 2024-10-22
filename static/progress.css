@@ -1,0 +1,257 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+    padding: 0;
+    background-color: #ecf4f3;
+    color: black;
+}
+
+.hero {
+    position: relative;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    background: url("images/back_img_4.jpg") no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+nav {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 40px;
+    z-index: 2;
+}
+
+nav h1 {
+    font-size: 40px;
+    font-family: "Dancing Script", cursive;
+    font-weight: normal;
+    color: yellow;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.Home{
+    color: whitesmoke;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: yellow;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.contact{
+    padding: 10px;
+    background-color: #00A49A; 
+    color: white;
+    border-radius: 10px;
+    font-size: medium;
+    font-weight: normal;
+}
+.contact:hover{
+    background-color: #007f75;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: yellow;
+    margin-top: 60px; 
+}
+
+.hero-content h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+.hero-content p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.btn-discover {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    background-color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-discover:hover {
+    background-color: #ddd;
+    transform: translateY(-3px);
+}
+
+.vision{
+    zoom: 80%;
+    font-family: "Roboto", sans-serif;
+    margin-left: 100px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 60px;
+    padding: 20px;
+    margin-right: 100px;
+}
+.vision h2{
+    font-family: "New Amsterdam", cursive;
+    color: black;
+    font-size: 6em;
+}
+
+.vision strong{
+    font-size: 1.2em;
+}
+.vision ul li{
+    font-size: 30px;
+}
+
+.vision-topic{
+    border: 2px solid black;
+    margin-top: 20px;  
+    padding: 20px;  
+    border-radius: 20px;
+    font-size: 2em;
+}
+
+
+.vision-topic:hover{
+    transform: translate(-50px);
+    transition: transform 0.5s ease-in-out;
+}
+.vision-topic:nth-child(odd){
+    background-color: #7BD3EA;
+}
+.vision-topic:nth-child(even){
+    background-color: #95E1D3;
+}
+
+footer {
+    position: relative;
+    background-image: url('images/footer_img.jpeg'); 
+    background-position: center;
+    padding: 100px 0;
+    margin-top: 50px;
+    color: white;
+    text-align: center;
+    z-index: 1;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); 
+    z-index: -1;
+}
+
+.footer-container {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.footer-contact {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.footer-subtext {
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-heading-contact {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.footer-btn {
+    background-color: #00A49A; 
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.footer-btn:hover {
+    background-color: #007f75; 
+}
+
+
+#scrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    z-index: 1;
+    line-height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: opacity 0.3s ease;
+}
+
+#scrollToTop.show {
+    display: block;
+    opacity: 1;
+}
+
+#scrollToTop::after {
+    content: "\25B2"; 
+    display: block;
+    color: white;
+    font-weight: bold;
+}

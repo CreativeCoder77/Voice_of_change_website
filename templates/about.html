@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="static/about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="hero">
+        <div class="overlay"></div>
+        <nav>
+            <h1> {{ website_name }}</h1>
+            <ul>
+                <li><a href="/" class="Home">Home</a></li>
+                <li><a href="about" class="about">About Us</a></li>
+                <li><a href="/contact" class="contact">Join Now</a></li>
+            </ul>
+        </nav>
+        <div class="hero-content">
+            <h1 class="heading1">About Us:</h1>
+            <p class="heading2">Welcome to Next Vishwa Guru, your gateway to understanding and participating in India’s
+                transformative journey toward becoming a developed nation by 2047. This website is dedicated to
+                showcasing the vision, strategies, and initiatives driving India's progress as we approach 100 years of
+                independence.
+            </p>
+        </div>
+        <div class="hero-image">
+            <img src="images/about_img.jpg" alt="Background Image">
+        </div>
+    </header>
+
+    <main>
+        <section class="about-section">
+            <div class="about-container container-1">
+                <div class="left-side">
+                    <h1>Our Motive</h1>
+                </div>
+                <div class="right-side">
+                    <div class="text-background">
+                        <p>Our primary goal is to inspire and inform citizens about the collective efforts being made to
+                            achieve the vision of a prosperous, inclusive, and sustainable India. We aim to provide a
+                            comprehensive platform that brings together government initiatives, innovative projects, and
+                            public participation opportunities, ensuring that everyone is engaged in shaping the future
+                            of our nation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about-section">
+            <div class="about-container container-2">
+                <div class="left-side">
+                    <h1>What We Provide</h1>
+                </div>
+                <div class="right-side">
+                    <div class="text-background">
+                        <ul class="arrow-list">
+                            <li><strong>Detailed Information:</strong> on the strategic framework, projects, and
+                                innovations driving India's development.</li>
+                            <li><strong>Progress Updates:</strong> through news, reports, and performance metrics that
+                                track our journey toward the 2047 goals.</li>
+                            <li><strong>Public Engagement:</strong> opportunities, including forums, surveys, and
+                                events, allowing you to contribute your ideas and feedback.</li>
+                            <li><strong>Educational Resources:</strong> to help you understand the vision and its impact
+                                on various aspects of life in India.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about-section">
+            <div class="about-container container-3">
+                <div class="left-side">
+                    <h1>Conclusion</h1>
+                </div>
+                <div class="right-side">
+                    <div class="text-background">
+                        <p>Our mission is to be a trusted source of information and a platform for collaboration as we
+                            work together to realize the dream of Viksit Bharat 2047.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="scrollToTop" onclick="scrollToTop()"></div>
+
+    <script>
+        window.addEventListener('scroll', handleScroll);
+
+        window.onload = handleScroll;
+
+        window.onscroll = function () {
+            var scrollToTop = document.getElementById("scrollToTop");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                scrollToTop.classList.add("show");
+            } else {
+                scrollToTop.classList.remove("show");
+            }
+        };
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+
+</html>

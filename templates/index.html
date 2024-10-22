@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> {{ website_name }}</title>
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Pacifico&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Recursive:wght@300..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Indie+Flower&family=New+Amsterdam&family=Pacifico&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Recursive:wght@300..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="hero">
+        <div class="overlay"></div>
+        <nav>
+            <h1> {{ website_name }}</h1>
+            <ul>
+                <li><a class='Home' href='/'>Home</a></li>
+                <li><a class='about' href='/about'>About Us</a></li>
+                <li><a class='contact' href='/contact'>Join Now</a></li>
+            </ul>
+        </nav>
+        <div class="hero-content">
+            <h2>VOICE OF CHANGE FOR A BETTER INDIA</h2>
+            <a href="#cards" class="btn-discover">Discover</a>
+            <div id="cards"></div>
+            <p class="arrow">&darr;</p>
+        </div>
+    </header>
+
+
+    <div class="card-container" id="card-container">
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h3>Steps to Empower Women</h3>
+                </div>
+                <div class="card-back">
+                    <p>Discover key developments in women's safety, including new laws and community initiatives aimed at protecting and empowering women in India.</p>
+                    <a class='card_button' href='/women'>Know More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h3>Helping Children with Special Needs</h3>
+                </div>
+                <div class="card-back">
+                    <p>Explore initiatives aimed at supporting children with special needs, including inclusive education programs and community resources that promote accessibility and empowerment.</p>
+                    <a class='card_button' href='/children'>Know More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h3>Equality Towards Backward Classes in India</h3>
+                </div>
+                <div class="card-back">
+                    <p>Learn about efforts to promote equality for backward classes, including affirmative action policies and social initiatives aimed at improving access to education and employment opportunities.</p>
+                    <a class='card_button' href='/timeline.html'>Know More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h3>Environmental Sustainability and Rural Development</h3>
+                </div>
+                <div class="card-back">
+                    <p>Discover initiatives that promote environmental sustainability in rural areas, focusing on sustainable agriculture, renewable energy, and community-led conservation efforts.</p>
+                    <a class='card_button' href='/vision.html'>Know More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h3 id="card2">Improving Healthcare Access in India</h3>
+                </div>
+                <div class="card-back">
+                    <p>Explore efforts to enhance healthcare access across India, focusing on telemedicine, rural clinics, and government initiatives aimed at ensuring quality healthcare for all.</p>
+                    <a class='card_button' href='/progress.html'>Know More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contribution">
+        <h1>Contribute Now:</h1>
+        <p>Public participation is essential to the success of Viksit Bharat 2047. We encourage you to join the
+            conversation and help shape India’s future. You can participate in forums and discussions on key issues,
+            share your ideas, and engage in policy-making through public consultations. Additionally, your feedback is
+            invaluable—please use our online surveys and feedback forms to express your opinions and suggest
+            improvements. Your voice is crucial in ensuring that our initiatives reflect the needs of all citizens.</p>
+        <button id="openModalBtn" class="btn">Send Us your details</button>
+        <button id="openFeedbackModalBtn" class="btn">Give Feedback</button>
+    </div>
+
+    <!-- The Modal -->
+    <div id="formModal" class="modal">
+        <div class="modal-content">
+            <span id="closeModalBtn" class="close">&times;</span>
+            <h2>Fill Out Your Details to participate in Public Conversation</h2>
+            <form class='form' id='detailsForm'  netlify>
+                <input type='hidden' name='form-name'
+                    value='detailsForm' >
+                <div class="form-group">
+                    <input type="text" id="name" name="name" class="form-input" placeholder="Name" required>
+                </div>
+
+                <div class="form-group">
+                    <input type="email" id="email" name="email" class="form-input" placeholder="Email" required>
+                </div>
+
+                <div class="form-group">
+                    <input id="message" name="message" class="form-input" type="text" placeholder="Phone Number"
+                        required>
+                </div>
+
+                <button type="submit" class="form-submit">Send Details</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="feedbackModal" class="modal">
+        <div class="modal-content">
+            <span id="closeFeedbackModalBtn" class="close">&times;</span>
+            <h2>Share Your Feedback with us</h2>
+            <form class='form' id='feedbackForm' netlify>
+                <input type='hidden' name='form-name'
+                    value='feedbackForm' />
+                <div class="form-group">
+                    <input type="text" id="feedbackName" name="feedbackName" class="form-input" placeholder="Name"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <input type="email" id="feedbackEmail" name="feedbackEmail" class="form-input" placeholder="Email"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <textarea id="feedbackMessage" name="feedbackMessage" class="form-textarea" rows="6"
+                        placeholder="Your Feedback" required></textarea>
+                </div>
+
+                <button type="submit" class="form-submit">Submit Feedback</button>
+            </form>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-contact">
+                <p>Get involved today</p>
+                <h1 class="footer-heading-contact">Join hands in building a stronger India</h1>
+                <a class='footer-btn' href='/contact'>Join Now</a>
+            </div>
+
+    </footer>
+
+    <div id="scrollToTop" onclick="scrollToTop()"></div>
+
+    <script src="styles/script.js"></script>
+</body>
+
+</html>
