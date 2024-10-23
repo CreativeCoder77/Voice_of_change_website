@@ -27,6 +27,10 @@ def children():
 def equality():
     return render_template("equality.html")
 
+@app.route("/sustainability")
+def sustainability():
+    return render_template("sustainability.html")
+
 @app.route("/about")
 def about():
     return render_template("about.html")

@@ -202,7 +202,7 @@ nav ul li a {
 .card:nth-child(1) .card-front, .card:nth-child(1) .card-back { background-image: url("images/women.png"); }
 .card:nth-child(2) .card-front, .card:nth-child(2) .card-back { background-image: url("images/children.png"); }
 .card:nth-child(3) .card-front, .card:nth-child(3) .card-back { background-image: url("images/equality.png"); }
-.card:nth-child(4) .card-front, .card:nth-child(4) .card-back { background-image: url("images/card_img.jpg"); }
+.card:nth-child(4) .card-front, .card:nth-child(4) .card-back { background-image: url("images/sustainability.png"); }
 .card:nth-child(5) .card-front, .card:nth-child(5) .card-back { background-image: url("images/back_img_4.jpg"); }
 
 .card:hover .card-front, .card:hover .card-back {
